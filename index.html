@@ -1,13 +1,107 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> 𝗣𝗔𝗡𝗞𝗔𝗝 𝗕𝗛𝗔𝗥𝗗𝗪𝗔𝗝 𝗪𝗔𝗬2𝗟𝗔𝗔𝗕𝗛™</title>
-<!-- Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAY2LAABH STOCK SELECTION - Premium Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: #020617;
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #canvas-stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .ambient-glow {
+            position: absolute;
+            top: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, rgba(59, 130, 246, 0.2) 40%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 1;
+            pointer-events: none;
+            animation: pulseGlow 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { opacity: 0.6; transform: translateX(-50%) scale(0.95); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        }
+
+        .glass-card-v2 {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+
+        .inner-feature-box {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(51, 65, 85, 0.7);
+            backdrop-filter: blur(12px);
+        }
+
+        .cta-btn-glow {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn-glow:hover {
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Modal Styles */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    </style>
+  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,63 +114,252 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1797120434806492');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1797120434806492&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1797120434806492&ev=PageView&noscript=1"
+/></noscript>
 <!-- End Meta Pixel Code -->
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#0f1117;color:#fff;text-align:center;padding:20px}
-.container{max-width:500px;margin:auto}
-.profile{width:140px;height:140px;border-radius:50%;border:4px solid #00ff88;object-fit:cover;box-shadow:0 0 25px rgba(0,255,136,.4);margin-top:20px}
-h1{margin-top:20px;font-size:32px;font-weight:700}
-.subtitle{margin-top:8px;font-size:18px;color:#00ff88;font-weight:600}
-.badge{display:inline-block;background:#00ff88;color:#000;padding:8px 15px;border-radius:20px;font-weight:700;margin-top:15px}
-.telegram-btn{display:block;background:#00c853;color:#fff;text-decoration:none;padding:16px;margin:25px 0;border-radius:12px;font-size:18px;font-weight:700;box-shadow:0 5px 20px rgba(0,200,83,.4)}
-.box{background:#171b26;padding:18px;border-radius:14px;margin-top:18px;border:1px solid rgba(255,255,255,.08)}
-.box h3{margin-bottom:10px;color:#00ff88}
-.benefits{text-align:left;line-height:2;font-size:16px}
-.urgency{background:#ff9800;color:#000;padding:16px;border-radius:12px;font-weight:700;margin-top:20px}
-.disclaimer{margin-top:25px;font-size:12px;color:#bdbdbd;line-height:1.7;text-align:left;background:#171b26;padding:15px;border-radius:10px}
-.footer{margin-top:20px;font-size:13px;color:#888}
-</style>
 </head>
-<body>
-<div class="container">
-<img src="https://i.ibb.co/gZNH4Pg1/image.png" alt="𝗣𝗔𝗡𝗞𝗔𝗝 𝗕𝗛𝗔𝗥𝗗𝗪𝗔𝗝 " class="profile">
-<h1> 𝗣𝗔𝗡𝗞𝗔𝗝 𝗕𝗛𝗔𝗥𝗗𝗪𝗔𝗝</h1>
-<div class="subtitle">NIFTY • BANKNIFTY • OPTIONS</div>
-<div class="badge">🔥 FREE TELEGRAM ACCESS</div>
-<a href="https://t.me/+eE7Y2umpK2IzNTZl" class="telegram-btn">🚀 JOIN NOW FOR FREE TELEGRAM</a>
-<div class="box">
-<h3>📈 Trusted By Traders</h3>
-<p>5000+ Active Members Already Connected With Our Trading Community</p>
-</div>
-<div class="box">
-<h3>✅ What You Will Get</h3>
-<div class="benefits">
-✅ Daily Market Analysis<br>
-✅ NIFTY & BANKNIFTY Updates<br>
-✅ Options Trading Setups<br>
-✅ Intraday Trading Ideas<br>
-✅ Educational Content<br>
-✅ Risk Management Guidance<br>
-✅ Live Market Discussions
-</div>
-</div>
-<div class="urgency">⏰ FREE ACCESS MAY CLOSE SOON<br>JOIN NOW BEFORE THE COMMUNITY BECOMES PAID</div>
-<div class="disclaimer">
-<strong>Advisory Policy & Disclaimer</strong><br><br>
-⚠️ We are not SEBI registered investment advisors. All information shared is for educational purposes only. Trading and investing involve risk. Please consult your financial advisor before making any decisions.
-</div>
-<div class="footer">
-  © 2026 𝗣𝗔𝗡𝗞𝗔𝗝 𝗕𝗛𝗔𝗥𝗗𝗪𝗔𝗝 | All Rights Reserved
-  <br><br>
-  <a href="https://t.me/+KMkMkqIAJvliMzM1"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#00ff88;text-decoration:none;font-weight:700;">
-    Powered by @ADBAGENCY
-  </a>
-</div>
-</div>
+<body class="flex justify-center items-center py-8 px-4">
+
+    <canvas id="canvas-stars"></canvas>
+    <div class="ambient-glow"></div>
+
+    <div class="relative z-10 w-full max-w-[400px] glass-card-v2 rounded-[36px] p-6 text-center fade-in-up">
+        
+        <!-- Live Alert Banner -->
+        <div class="flex items-center justify-between bg-slate-900/90 border border-slate-700/60 rounded-full py-1.5 px-3 mb-6 text-[11px] font-semibold text-slate-300">
+            <span class="flex items-center gap-1.5">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                Live Market Signals
+            </span>
+            <span class="text-emerald-400 font-bold">5,000+ Active Traders</span>
+        </div>
+
+        <!-- Avatar & Brand Header -->
+        <div class="relative flex justify-center mb-4">
+            <div class="p-[3px] rounded-full bg-gradient-to-tr from-emerald-500 via-blue-500 to-indigo-500 shadow-xl">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-slate-950 bg-slate-900">
+                    <img src="Pankaj11.jpg" alt="WAY2LAABH" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="absolute bottom-1 right-1/2 translate-x-9 bg-emerald-500 text-slate-950 w-6 h-6 rounded-full flex items-center justify-center border-2 border-slate-950 text-[11px] font-black shadow-md">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+
+        <h1 class="text-2xl font-black tracking-tight text-white uppercase mb-0.5">
+            PANKAJ BHARDWAJ (WAY2LAABH)
+        </h1>
+        <h2 class="text-sm font-extrabold tracking-widest text-emerald-400 uppercase mb-4">
+            Stock Selection & Market Intelligence
+        </h2>
+
+        <!-- Tags Badge -->
+        <div class="flex flex-wrap justify-center gap-1.5 mb-6">
+            <span class="bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-[10px] font-bold px-3 py-1 rounded-full">NIFTY</span>
+            <span class="bg-blue-950/60 border border-blue-500/30 text-blue-300 text-[10px] font-bold px-3 py-1 rounded-full">BANKNIFTY</span>
+            <span class="bg-purple-950/60 border border-purple-500/30 text-purple-300 text-[10px] font-bold px-3 py-1 rounded-full">OPTIONS</span>
+        </div>
+
+        <!-- Primary CTA Button (Updated Link) -->
+        <a href="https://t.me/+eE7Y2umpK2IzNTZl" target="_blank" onclick="trackSubscribeEvent()" class="cta-btn-glow flex items-center justify-center gap-3 text-slate-950 font-black py-4 px-6 rounded-2xl w-full text-base mb-6 active:scale-95 transition-all uppercase tracking-wide">
+            <i class="fa-brands fa-telegram text-xl"></i>
+            <span>Join Free Telegram</span>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+
+        <!-- Key Highlights Box -->
+        <div class="inner-feature-box rounded-2xl p-4 mb-6 text-left">
+            <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-700/50">
+                <span class="text-xs font-black uppercase text-slate-300 tracking-wider">Market Intelligence</span>
+                <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full font-bold">Accuracy High</span>
+            </div>
+
+            <div class="space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+                        <i class="fa-solid fa-chart-line text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-100">100 - 300 Points Daily Target</p>
+                        <p class="text-[11px] text-slate-400">High-conviction observational index moves</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
+                        <i class="fa-solid fa-bullseye text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-100">80% - 90% Accuracy Rate</p>
+                        <p class="text-[11px] text-slate-400">Data-backed trade setups & analysis</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                        <i class="fa-solid fa-gift text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-100">Daily Free Demo Calls</p>
+                        <p class="text-[11px] text-slate-400">3-4 observational trade setups daily</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-700/50 flex items-center justify-between text-[11px] text-slate-400 font-medium">
+                <span><i class="fa-solid fa-bolt text-amber-400 mr-1"></i> FII / DII Live Data</span>
+                <span><i class="fa-solid fa-lock text-emerald-400 mr-1"></i> 100% Free Access</span>
+            </div>
+        </div>
+
+        <!-- Secondary CTA (Updated Link) -->
+        <a href="https://t.me/+eE7Y2umpK2IzNTZl" target="_blank" onclick="trackSubscribeEvent()" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold py-3.5 px-6 rounded-xl w-full text-sm mb-5 border border-slate-700 transition-all">
+            <span>GET INSTANT ACCESS NOW</span>
+            <i class="fa-solid fa-bolt text-amber-400"></i>
+        </a>
+
+        <!-- Footer Links & Popup Triggers -->
+        <div class="border-t border-slate-800/80 pt-4">
+            <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 text-[11px] text-slate-400 font-semibold mb-3">
+                <button onclick="openModal('about')" class="hover:text-emerald-400 transition-colors">About Us</button>
+                <span>•</span>
+                <button onclick="openModal('terms')" class="hover:text-emerald-400 transition-colors">Terms & Conditions</button>
+                <span>•</span>
+                <button onclick="openModal('disclaimer')" class="hover:text-emerald-400 transition-colors">Disclaimer</button>
+                <span>•</span>
+                <button onclick="openModal('contact')" class="hover:text-emerald-400 transition-colors">Contact Us</button>
+            </div>
+            
+            <div class="inline-flex items-center gap-1.5 text-[10px] text-slate-500 font-medium mb-1">
+                <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                <span>AD MANAGE BY @ADBAGENCY)</span>
+            </div>
+            <p class="text-[10px] text-slate-600">
+                © WAY2LAABH STOCK SELECTION — All Rights Reserved
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Popup Modal Component -->
+    <div id="infoModal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="relative w-full max-w-md bg-slate-900 border border-slate-700 rounded-3xl p-6 text-left shadow-2xl max-h-[80vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Dynamic Content Container -->
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Logic
+        const modalData = {
+            about: `
+                <h3 class="text-lg font-black text-emerald-400 mb-2">About Us</h3>
+                <p class="text-slate-300 text-xs leading-relaxed mb-3">WAY2LAABH Stock Selection market analytics aur intelligence support provide karta hai. Hum stock options, Nifty, aur BankNifty ki deep market analysis share karte hain taaki traders informative decisions le sakein.</p>
+                <p class="text-slate-400 text-xs leading-relaxed">Hamara mission trader community ko live updates aur qualitative research-backed data se empower karna hai.</p>
+            `,
+            terms: `
+                <h3 class="text-lg font-black text-emerald-400 mb-2">Terms & Conditions</h3>
+                <p class="text-slate-300 text-xs leading-relaxed mb-2">1. Sabhi updates aur posts sirf educational aur informational purpose ke liye hain.</p>
+                <p class="text-slate-300 text-xs leading-relaxed mb-2">2. Hum kisi bhi tarah ke guaranteed profit ka claim nahi karte.</p>
+                <p class="text-slate-300 text-xs leading-relaxed">3. Telegram channel ya website ki information par trade karne se pehle apne financial advisor se salah zaroor lein.</p>
+            `,
+            disclaimer: `
+                <h3 class="text-lg font-black text-emerald-400 mb-2">Disclaimer</h3>
+                <p class="text-slate-300 text-xs leading-relaxed mb-3">Stock trading aur options trading me high financial risk shamil hota hai. Aap apna poora capital bhi kho sakte hain.</p>
+                <p class="text-slate-300 text-xs leading-relaxed">Hum SEBI registered advisor NAHI hain. Hamari sari calls aur analysis sirf educational purpose ke liye hain. Kisi bhi loss ke liye WAY2LAABH zimmedar nahi hoga.</p>
+            `,
+            contact: `
+                <h3 class="text-lg font-black text-emerald-400 mb-2">Contact Us</h3>
+                <p class="text-slate-300 text-xs leading-relaxed mb-3">Kisi bhi query ya support ke liye aap humse Telegram par contact kar sakte hain:</p>
+                <a href="https://t.me/+so3mwHYA5_00YzE9" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs px-4 py-2 rounded-xl font-bold">
+                    <i class="fa-brands fa-telegram"></i> Official Support Telegram
+                </a>
+            `
+        };
+
+        function openModal(type) {
+            document.getElementById('modalContent').innerHTML = modalData[type];
+            document.getElementById('infoModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('infoModal').classList.remove('active');
+        }
+
+        // Close on background click
+        document.getElementById('infoModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Pixel tracking function
+        function trackSubscribeEvent() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe', {
+                    value: '0.00',
+                    currency: 'INR',
+                    predicted_ltv: '0.00'
+                });
+            }
+        }
+
+        // Stars Background Animation
+        const canvas = document.getElementById('canvas-stars');
+        const ctx = canvas.getContext('2d');
+        let width, height, stars = [];
+
+        function resizeCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            initStars();
+        }
+
+        function initStars() {
+            stars = [];
+            const count = Math.floor((width * height) / 3500);
+            for (let i = 0; i < count; i++) {
+                stars.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 1.2 + 0.3,
+                    alpha: Math.random(),
+                    speed: Math.random() * 0.01 + 0.005,
+                    twinkleDir: Math.random() > 0.5 ? 1 : -1,
+                    color: ['#ffffff', '#6ee7b7', '#93c5fd'][Math.floor(Math.random() * 3)]
+                });
+            }
+        }
+
+        function animateStars() {
+            ctx.clearRect(0, 0, width, height);
+            stars.forEach(star => {
+                star.alpha += star.speed * star.twinkleDir;
+                if (star.alpha >= 0.85) star.twinkleDir = -1;
+                if (star.alpha <= 0.15) star.twinkleDir = 1;
+                star.y -= star.speed * 12;
+                if (star.y < 0) {
+                    star.y = height;
+                    star.x = Math.random() * width;
+                }
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                ctx.fillStyle = star.color;
+                ctx.globalAlpha = Math.max(0, Math.min(1, star.alpha));
+                ctx.fill();
+            });
+            requestAnimationFrame(animateStars);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        animateStars();
+    </script>
 </body>
 </html>
